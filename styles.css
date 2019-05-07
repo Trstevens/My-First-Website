@@ -10,6 +10,8 @@ body{
     width:100vw;
     background-position-x: center;
     background-position-y:center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-nav li{
@@ -87,7 +89,8 @@ h1{
 
 .player-container{
     display:flex;
-    justify-content:space-around;
+    flex-direction:row;
+    justify-content:center;
 }
 
 
@@ -106,6 +109,19 @@ figcaption{
     text-align:center;
     margin-bottom: 10px;
 }
+
+
+@media (min-width: 600px) {
+
+    p{
+        font-size:1.5em;
+    }
+
+    .player-container{
+        display:flex;
+    }
+}
+
 
 
 footer{
